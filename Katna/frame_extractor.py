@@ -95,7 +95,7 @@ class FrameExtractor(object):
 
             frame_diffs = []
             frames = []
-            for _ in range(0, self.max_frames_in_chunk):
+            for _ in range(0, self.max_frames_in_chunk, 5):
                 if ret:
                     # Calling process frame function to calculate the frame difference and adding the difference 
                     # in **frame_diffs** list and frame to **frames** list
